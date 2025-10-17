@@ -2,182 +2,125 @@
 <html>
 
 <head>
-    <title>Profil Diri</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="catboom.jpg">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 10px;
-            padding: 10px;
-            background-color: bisque;
-        }
-
-        header,
-        section,
-        footer {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #FFFEEB;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1,
-        h2 {
-            color: black;
-        }
-
-        img {
-            border-radius: 15%;
-        }
-
-
-
-
-        tr:nth-child(odd) {
-            background-color: #D6EEEE;
-        }
-
-        tr:nth-child(even) {
-            background-color: #D6EEEE;
-        }
-
-        tr:hover {
-            background-color: #40d42f;
-        }
-
-        input[type=text],
-        select {
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            display: inline-block;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-
-
-        input[type=submit] {
-            width: 40%;
-            background-color: #04AA6D;
-            color: white;
-            padding: 10px 20px;
-            margin: 10px 0px;
-            border: none;
-            border-radius: 10px;
-            cursor: pointer;
-        }
-
-        .button {
-            text-align: center;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
-        }
-    </style>
-
+  <title>Profil Diri</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/catboom.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+  
 </head>
+
 <body>
-    <header>
-        <h1 style="font-family: 'Times New Roman', Times, serif;">PROFIL MAHASISWA</h1>
-        <br>
+  <div class="grid-container">
+    <header class="header">
+      <h1>PROFIL MAHASISWA</h1>
     </header>
-    <section>
-        <h2 style="font-family: 'Times New Roman', Times, serif;">BIODATA</h2>
-        <img src="profile.jpg" alt="Foto Profil" width="140">
-        <p>Nama: Marcell Christian Santoso</p>
-        <p>NIM: 2405551153</p>  
-        <p>Alamat: Denpasar, Bali</p>
-        <p>Email: marcellsantoso69@gmail.com</p>
-        <br>
-    </section>
-    <section>
-        <div>
-            <h2 style="font-family: 'Times New Roman', Times, serif;">Navigation Menu</h2>
-            <a href="#A1">Riwayat Pendidikan</a>
-            <br>
-            <a href="#A2">Hobi</a>
-            <br>
-            <a href="#A3">Past Experience</a>
+
+    <aside class="sidebar">
+      <h2>Navigation Menu</h2>
+      <a href="#A1">Riwayat Pendidikan</a>
+      <a href="#A2">Hobi</a>
+      <a href="#A3">Past Experience</a>
+    </aside>
+
+    <main class="content">
+      <section class="biodata">
+        <h2>Biodata</h2>
+        <div class="bio-flex">
+          <img src="assets/newprofile.jpg" alt="Foto Profil" width="200">
+          <div>
+            <p><strong>Nama:</strong> Marcell Christian Santoso</p>
+            <p><strong>NIM:</strong> 2405551153</p>
+            <p><strong>Alamat:</strong> Jl. Seruni No.5, Denpasar, Bali</p>
+            <p><strong>Email:</strong> marcellsantoso69@gmail.com</p>
+          </div>
         </div>
-        <section>
-            <h2 style="font-family: 'Times New Roman', Times, serif;" id="A1">Riwayat Pendidikan</h2>
-            <ul>
-                <li>SMP Negeri 1 Gianyar</li>
-                <li>SMA Negeri 1 Denpasar </li>
-                <li>Universitas Udayana</li>
-            </ul>
+      </section>
 
-            <h2 style="font-family: 'Times New Roman', Times, serif;" id="A2">Hobi</h2>
-            <ol>
-                <li>Bermain Game</li>
-                <li>Mendengarkan Musik</li>
-                <li>Menonton Film</li>
-            </ol>
+      <section id="A1">
+        <h2>Riwayat Pendidikan</h2>
+        <ul>
+          <li>SMP Negeri 1 Gianyar</li>
+          <li>SMA Negeri 1 Denpasar</li>
+          <li>Universitas Udayana</li>
+        </ul>
+      </section>
 
-            <h2 style="font-family: 'Times New Roman', Times, serif;">Socials</h2>
-            <ul>
-                <li>Instagram: <a href="https://www.instagram.com/mrchrs._?igsh=NGg4M24yMDRzeTg5"> mrchrs</a></li>
-                <li>GitHub: <a href="https://github.com/Enzakyu"> Enzakyu</a></li>
-                <li>LinkedIn: <a href=https://www.linkedin.com/in/marcell-christian-santoso-331437322> Marcell Christian Santoso</a></li>
-                <li>Email: <a href="mailto:marcellsantoso69@gmail.com"> marcellsantoso69@gmail.com</a></li>
-                <li>Facebook: <a href="https://www.facebook.com/share/15peg2gSp3/"> Marcell Santoso</a></li>
-            </ul>
-            <br>
-        </section>
-        <section>
-            <h2 style="font-family: 'Times New Roman', Times, serif;" id="A3">Past Experience</h2>
-            <table border="1" cellpadding="10" cellspacing="0">
-                <tr>
-                    <th>No</th>
-                    <th>Posisi</th>
-                    <th>Event</th>
-                    <th>Tahun</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>LO Peserta</td>
-                    <td>ITCC</td>
-                    <td>2024</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Anggota</td>
-                    <td>Tecart</td>
-                    <td>2024</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Anggota</td>
-                    <td>Tecart</td>
-                    <td>2025</td>
-                </tr>
-            </table>
+      <section id="A2">
+        <h2>Hobi</h2>
+        <ol>
+          <li>Bermain Game</li>
+          <li>Mendengarkan Musik</li>
+          <li>Menonton Film</li>
+        </ol>
+      </section>
 
-        </section <form action="/action_page.php">
-        <section>
-            <label for="fname">Full Name</label>
-            <input type="text" id="fname" name="firstname" placeholder="Your name">
+      <section>
+        <h2>Socials</h2>
+        <ul>
+          <li>Instagram: <a href="https://www.instagram.com/mrchrs._?igsh=NGg4M24yMDRzeTg5">mrchrs</a></li>
+          <li>GitHub: <a href="https://github.com/Enzakyu">Enzakyu</a></li>
+          <li>LinkedIn: <a href="https://www.linkedin.com/in/marcell-christian-santoso-331437322">Marcell Christian
+              Santoso</a></li>
+          <li>Email: <a href="mailto:marcellsantoso69@gmail.com">marcellsantoso69@gmail.com</a></li>
+          <li>Facebook: <a href="https://www.facebook.com/share/15peg2gSp3/">Marcell Santoso</a></li>
+        </ul>
+      </section>
 
-            <label for="Email">Email</label>
-            <input type="text" id="lname" name="lastname" placeholder="Your Email">
+      <section id="A3">
+        <h2>Past Experience</h2>
+        <table>
+          <tr>
+            <th>No</th>
+            <th>Posisi</th>
+            <th>Event</th>
+            <th>Tahun</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>LO Peserta</td>
+            <td>ITCC</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Anggota</td>
+            <td>Tecart</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Anggota</td>
+            <td>Tecart</td>
+            <td>2025</td>
+          </tr>
+        </table>
+      </section>
 
-            <label for="Your Message">Message </label>
-            <input type="text" id="Message" name="Message" placeholder="Your Message">
+      <section>
+        <h2>Contact Me</h2>
+        <form action="#">
+          <label for="fname">Full Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name">
 
-            <div class="button">
-                <input type="submit" value="Submit">
-                </form>
-            </div>
-        </section>
+          <label for="Email">Email</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your Email">
 
-        <footer>
-            <p>2025 Profil @Marcell Christian Santoso</p>
+          <label for="Message">Message</label>
+          <input type="text" id="Message" name="Message" placeholder="Your Message">
+
+          <div class="button">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Profil @Marcell Christian Santoso</p>
+    </footer>
+  </div>
 </body>
-
 
 </html>
