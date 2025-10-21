@@ -68,7 +68,7 @@
       grid-area: content;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 24px;
       background-color: #fff;
       padding: 25px;
       border-radius: 10px;
